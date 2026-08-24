@@ -1,0 +1,361 @@
+[
+  {
+    "id": "p1",
+    "name": {
+      "en-US": "Milk",
+      "hi-IN": "दूध",
+      "mr-IN": "दूध",
+      "ta-IN": "பால்"
+    },
+    "category": "Dairy",
+    "brand": "Generic",
+    "price": 62,
+    "currency": "INR",
+    "size": 1,
+    "unit": "L",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["dairy", "milk", "दूध", "பால்"],
+    "substituteIds": ["p2"],
+    "image": "/products/dairy/milk.jpg"
+  },
+  {
+    "id": "p2",
+    "name": {
+      "en-US": "Almond Milk",
+      "hi-IN": "बादाम दूध",
+      "mr-IN": "बदाम दूध",
+      "ta-IN": "பாதாம் பால்"
+    },
+    "category": "Dairy",
+    "brand": "Generic",
+    "price": 120,
+    "currency": "INR",
+    "size": 1,
+    "unit": "L",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["dairy", "almond milk", "almond", "plant milk"],
+    "substituteIds": ["p3"],
+    "image": "/products/dairy/almond-milk.jpg"
+  },
+  {
+    "id": "p3",
+    "name": {
+      "en-US": "Soy Milk",
+      "hi-IN": "सोया दूध",
+      "mr-IN": "सोया दूध",
+      "ta-IN": "சோயா பால்"
+    },
+    "category": "Dairy",
+    "brand": "Generic",
+    "price": 100,
+    "currency": "INR",
+    "size": 1,
+    "unit": "L",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["dairy", "soy milk", "soy", "plant milk"],
+    "substituteIds": ["p2"],
+    "image": "/products/dairy/soy-milk.jpg"
+  },
+  {
+    "id": "p4",
+    "name": {
+      "en-US": "Whole Wheat Bread",
+      "hi-IN": "गेहूं की रोटी",
+      "mr-IN": "गव्हाची ब्रेड",
+      "ta-IN": "கோதுமை ரொட்டி"
+    },
+    "category": "Bakery",
+    "brand": "Generic",
+    "price": 45,
+    "currency": "INR",
+    "size": 400,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["bakery", "bread", "whole wheat bread", "loaf", "ब्रेड", "रोटी"],
+    "substituteIds": [],
+    "image": "/products/bakery/whole-wheat-bread.jpg"
+  },
+  {
+    "id": "p34",
+    "name": {
+      "en-US": "Coffee",
+      "hi-IN": "कॉफी",
+      "mr-IN": "कॉफी",
+      "ta-IN": "காபி"
+    },
+    "category": "Beverages",
+    "brand": "Generic",
+    "price": 299,
+    "currency": "INR",
+    "size": 200,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["beverages", "coffee", "कॉफी", "காபி"],
+    "substituteIds": [],
+    "image": "/products/beverages/coffee.jpg"
+  },
+  {
+    "id": "p5",
+    "name": {
+      "en-US": "Orange Juice",
+      "hi-IN": "संतरे का रस",
+      "mr-IN": "संत्र्याचा रस",
+      "ta-IN": "ஆரஞ்சு சாறு"
+    },
+    "category": "Beverages",
+    "brand": "Generic",
+    "price": 80,
+    "currency": "INR",
+    "size": 1,
+    "unit": "L",
+    "availability": true,
+    "onSale": true,
+    "salePrice": 65,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["beverages", "juice", "orange juice", "orange"],
+    "substituteIds": [],
+    "image": "/products/beverages/orange-juice.jpg"
+  },
+  {
+    "id": "p40",
+    "name": {
+      "en-US": "Colgate Toothpaste",
+      "hi-IN": "कोलगेट टूथपेस्ट",
+      "mr-IN": "कोलगेट टूथपेस्ट",
+      "ta-IN": "கோல்கேட் பல்பசை"
+    },
+    "category": "Personal Care",
+    "brand": "Colgate",
+    "price": 85,
+    "currency": "INR",
+    "size": 150,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["personal care", "toothpaste", "colgate", "dental", "colgate toothpaste"],
+    "substituteIds": ["p41"],
+    "image": "/products/personal-care/colgate-toothpaste.jpg"
+  },
+  {
+    "id": "p41",
+    "name": {
+      "en-US": "Sensodyne Toothpaste",
+      "hi-IN": "सेंसोडाइन टूथपेस्ट",
+      "mr-IN": "सेंसोडाइन टूथपेस्ट",
+      "ta-IN": "சென்சோடைன் பல்பசை"
+    },
+    "category": "Personal Care",
+    "brand": "Sensodyne",
+    "price": 120,
+    "currency": "INR",
+    "size": 100,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["personal care", "toothpaste", "sensodyne", "dental", "sensitive"],
+    "substituteIds": ["p40"],
+    "image": "/products/personal-care/sensodyne-toothpaste.jpg"
+  },
+  {
+    "id": "p42",
+    "name": {
+      "en-US": "Shampoo",
+      "hi-IN": "शैम्पू",
+      "mr-IN": "शॅम्पू",
+      "ta-IN": "ஷாம்பு"
+    },
+    "category": "Personal Care",
+    "brand": "Generic",
+    "price": 199,
+    "currency": "INR",
+    "size": 200,
+    "unit": "ml",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["personal care", "shampoo", "hair"],
+    "substituteIds": [],
+    "image": "/products/personal-care/shampoo.jpg"
+  },
+  {
+    "id": "p43",
+    "name": {
+      "en-US": "Sunscreen",
+      "hi-IN": "सनस्क्रीन",
+      "mr-IN": "सनस्क्रीन",
+      "ta-IN": "சன்ஸ்கிரீன்"
+    },
+    "category": "Personal Care",
+    "brand": "Generic",
+    "price": 250,
+    "currency": "INR",
+    "size": 100,
+    "unit": "ml",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [3,4,5,6,7,8],
+    "tags": ["personal care", "sunscreen", "spf", "lotion", "sun protection"],
+    "substituteIds": [],
+    "image": "/products/personal-care/sunscreen.jpg"
+  },
+  {
+    "id": "p9",
+    "name": {
+      "en-US": "Red Apples",
+      "hi-IN": "लाल सेब",
+      "mr-IN": "लाल सफरचंद",
+      "ta-IN": "சிவப்பு ஆப்பிள்"
+    },
+    "category": "Produce",
+    "brand": "Generic",
+    "price": 120,
+    "currency": "INR",
+    "size": 6,
+    "unit": "pcs",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["produce", "fruit", "apples", "apple", "सेब", "ஆப்பிள்"],
+    "substituteIds": ["p10"],
+    "image": "/products/produce/red-apples.jpg"
+  },
+  {
+    "id": "p15",
+    "name": {
+      "en-US": "Red Tomatoes",
+      "hi-IN": "लाल टमाटर",
+      "mr-IN": "लाल टोमॅटो",
+      "ta-IN": "சிவப்பு தக்காளி"
+    },
+    "category": "Produce",
+    "brand": "Generic",
+    "price": 40,
+    "currency": "INR",
+    "size": 500,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["produce", "vegetable", "tomatoes", "tomato", "टमाटर"],
+    "substituteIds": [],
+    "image": "/products/produce/red-tomatoes.jpg"
+  },
+  {
+    "id": "p10",
+    "name": {
+      "en-US": "Yellow Bananas",
+      "hi-IN": "पीले केले",
+      "mr-IN": "पिवळे केळे",
+      "ta-IN": "மஞ்சள் வாழைப்பழம்"
+    },
+    "category": "Produce",
+    "brand": "Generic",
+    "price": 60,
+    "currency": "INR",
+    "size": 6,
+    "unit": "pcs",
+    "availability": true,
+    "onSale": true,
+    "salePrice": 49,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["produce", "fruit", "bananas", "banana", "केले", "வாழைப்பழம்"],
+    "substituteIds": [],
+    "image": "/products/produce/yellow-bananas.jpg"
+  },
+  {
+    "id": "p39",
+    "name": {
+      "en-US": "Biscuits",
+      "hi-IN": "बिस्कुट",
+      "mr-IN": "बिस्किट",
+      "ta-IN": "பிஸ்கட்"
+    },
+    "category": "Snacks",
+    "brand": "Generic",
+    "price": 30,
+    "currency": "INR",
+    "size": 100,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["snacks", "biscuits", "biscuit", "cookies", "बिस्कुट", "பிஸ்கட்"],
+    "substituteIds": [],
+    "image": "/products/snacks/biscuits.jpg"
+  },
+  {
+    "id": "p36",
+    "name": {
+      "en-US": "Mixed Roasted Nuts",
+      "hi-IN": "मिश्रित भुने मेवे",
+      "mr-IN": "मिश्र भाजलेले नट्स",
+      "ta-IN": "கலந்த வறுத்த கொட்டைகள்"
+    },
+    "category": "Snacks",
+    "brand": "Generic",
+    "price": 199,
+    "currency": "INR",
+    "size": 200,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["snacks", "nuts", "mixed nuts", "roasted nuts", "almonds", "cashews"],
+    "substituteIds": [],
+    "image": "/products/snacks/mixed-roasted-nuts.jpg"
+  },
+  {
+    "id": "p35",
+    "name": {
+      "en-US": "Potato Chips",
+      "hi-IN": "आलू चिप्स",
+      "mr-IN": "बटाटा चिप्स",
+      "ta-IN": "உருளைக்கிழங்கு சிப்ஸ்"
+    },
+    "category": "Snacks",
+    "brand": "Generic",
+    "price": 20,
+    "currency": "INR",
+    "size": 50,
+    "unit": "g",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["snacks", "chips", "potato chips", "chip", "crisps", "आलू चिप्स"],
+    "substituteIds": [],
+    "image": "/products/snacks/potato-chips.jpg"
+  },
+  {
+    "id": "p6",
+    "name": {
+      "en-US": "Dish Soap",
+      "hi-IN": "बर्तन साबुन",
+      "mr-IN": "भांडी साबण",
+      "ta-IN": "பாத்திர சோப்பு"
+    },
+    "category": "Household",
+    "brand": "Generic",
+    "price": 55,
+    "currency": "INR",
+    "size": 500,
+    "unit": "ml",
+    "availability": true,
+    "onSale": false,
+    "seasonalMonths": [0,1,2,3,4,5,6,7,8,9,10,11],
+    "tags": ["household", "dish soap", "soap", "cleaning", "detergent", "बर्तन"],
+    "substituteIds": [],
+    "image": "/products/household/dish-soap.jpg"
+  }
+]

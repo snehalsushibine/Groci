@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* ── Tailwind v4 class-based dark mode ─────────────────── */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Base reset ───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ══════════════════════════════════════════════════════
+   LIGHT MODE — Pastel Sage Green Grocery Commerce Palette
+   70% neutral · 20% sage green · 10% semantic accents
+══════════════════════════════════════════════════════ */
+:root {
+  /* Backgrounds */
+  --vc-bg:         #F6F4EE;  /* Warm cream background */
+  --vc-section:    #E7F1E5;  /* Soft sage green section background */
+  --vc-surface:    #FFFDF8;  /* Accent cream surface for cards */
+  --vc-cart-bg:    #FFFDF8;  /* Cart panel surface */
+
+  /* Borders */
+  --vc-border:     #D2E3D0;  /* Warm sage neutral border */
+  --vc-border-lt:  #E7F1E5;  /* Subtle divider */
+
+  /* Text */
+  --vc-text:       #172033;  /* Main dark text */
+  --vc-text-2:     #28543A;  /* Dark sage green text */
+  --vc-text-muted: #5C7060;  /* Muted sage text */
+  --vc-text-xmuted:#8CA390;  /* Metadata */
+
+  /* Brand / Primary — Pastel Sage Green System */
+  --vc-primary:      #4F9D69; /* Fresh sage green primary */
+  --vc-primary-hover:#28543A; /* Dark green hover */
+  --vc-primary-lt:   #E7F1E5; /* Soft green light container */
+  --vc-primary-sage: #86B88A; /* Primary pastel sage green */
+
+  /* Commerce Accents */
+  --vc-sale:        #E86A5C;  /* Sale coral */
+  --vc-sale-lt:     #FDF0EE;  /* Soft coral tint */
+  --vc-accent:      #DFAE52;  /* Seasonal amber */
+  --vc-accent-lt:   #FDF8EE;  
+  --vc-success:     #4F9D69;  /* Fresh green */
+  --vc-success-lt:  #E7F1E5;  
+  --vc-warn:        #DFAE52;  
+  --vc-warn-lt:     #FDF8EE;  
+
+  /* Shadows */
+  --vc-shadow-sm:   0 1px 3px rgba(40, 84, 58, 0.06), 0 1px 2px rgba(40, 84, 58, 0.04);
+  --vc-shadow-md:   0 4px 12px rgba(40, 84, 58, 0.08), 0 2px 4px rgba(40, 84, 58, 0.04);
+  --vc-shadow-cart: 2px 0 16px rgba(40, 84, 58, 0.06);
+}
+
+/* ══════════════════════════════════════════════════════
+   DARK MODE — Deep Navy & Elevated Cards
+══════════════════════════════════════════════════════ */
+:root.dark {
+  --vc-bg:         #0B1220;  /* Background */
+  --vc-section:    #131D30;  /* Surface section */
+  --vc-surface:    #1A263C;  /* Card surface */
+  --vc-cart-bg:    #131D30;  /* Cart panel */
+
+  --vc-border:     #283754;  /* Border */
+  --vc-border-lt:  #1D2A43;  
+
+  --vc-text:       #F6F7FB;  /* Primary text */
+  --vc-text-2:     #D0D5DD;
+  --vc-text-muted: #9AA7BC;  /* Muted */
+  --vc-text-xmuted:#64748B;
+
+  --vc-primary:      #6C63FF;  /* Primary indigo */
+  --vc-primary-hover:#837CFF;
+  --vc-primary-lt:   #1E2248;
+  --vc-primary-sage: #86B88A;
+
+  --vc-sale:        #FF7667;  /* Coral */
+  --vc-sale-lt:     #2E1B21;
+  --vc-accent:      #F2B84B;  /* Amber */
+  --vc-accent-lt:   #2A2113;
+  --vc-success:     #3CBF7A;  /* Green */
+  --vc-success-lt:  #122A1E;
+  --vc-warn:        #F2B84B;  
+  --vc-warn-lt:     #2A2113;
+
+  --vc-shadow-sm:   0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+  --vc-shadow-md:   0 4px 12px rgba(0,0,0,0.35), 0 2px 4px rgba(0,0,0,0.2);
+  --vc-shadow-cart: 2px 0 20px rgba(0,0,0,0.4);
+}
+
+/* ── Body ────────────────────────────────────────────── */
+body {
+  margin: 0;
+  background-color: var(--vc-bg);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--vc-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ── Semantic surface classes ─────────────────────────── */
+.vc-card {
+  background-color: var(--vc-surface);
+  border: 1px solid var(--vc-border);
+  border-radius: 0.75rem;
+  box-shadow: var(--vc-shadow-sm);
+}
+.vc-card:hover {
+  box-shadow: var(--vc-shadow-md);
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.vc-surface {
+  background-color: var(--vc-surface);
+  border: 1px solid var(--vc-border);
+  border-radius: 0.75rem;
+}
+.vc-surface-hover:hover {
+  border-color: var(--vc-primary);
+  box-shadow: var(--vc-shadow-md);
+  transition: all 150ms ease-in-out;
+}
+
+.vc-section {
+  background-color: var(--vc-section);
+}
+
+.vc-cart-panel {
+  background-color: var(--vc-cart-bg);
+  border-left: 1px solid var(--vc-border);
+  box-shadow: var(--vc-shadow-cart);
+}
+
+/* ── Sale / accent badge utilities ───────────────────── */
+.vc-badge-sale {
+  color: var(--vc-sale);
+  background-color: var(--vc-sale-lt);
+}
+.vc-badge-green {
+  color: var(--vc-success);
+  background-color: var(--vc-success-lt);
+}
+.vc-badge-orange {
+  color: var(--vc-accent);
+  background-color: var(--vc-accent-lt);
+}
+
+/* ── Utilities ─────────────────────────────────────── */
+.hide-scrollbar::-webkit-scrollbar,
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.hide-scrollbar,
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Animations ─────────────────────────────────────── */
+@keyframes mic-pulse-idle {
+  0%   { box-shadow: 0 0 0 0    rgba(79, 157, 105, 0.35); }
+  70%  { box-shadow: 0 0 0 18px rgba(79, 157, 105, 0);   }
+  100% { box-shadow: 0 0 0 0    rgba(79, 157, 105, 0);   }
+}
+@keyframes mic-pulse-listen {
+  0%   { box-shadow: 0 0 0 0    rgba(232, 106, 92, 0.45), 0 0 16px rgba(232, 106, 92, 0.3); }
+  70%  { box-shadow: 0 0 0 22px rgba(232, 106, 92, 0),   0 0 28px rgba(232, 106, 92, 0);   }
+  100% { box-shadow: 0 0 0 0    rgba(232, 106, 92, 0),   0 0 0   rgba(232, 106, 92, 0);   }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes cart-bump {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+@keyframes wave-bar {
+  0%, 100% { transform: scaleY(0.4); }
+  50%       { transform: scaleY(1);   }
+}
+
+.mic-idle   { animation: mic-pulse-idle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.mic-listen { animation: mic-pulse-listen 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.fade-up    { animation: fade-up 0.25s ease-out both; }
+.spin       { animation: spin-slow 1s linear infinite; }
+.cart-bump  { animation: cart-bump 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+.wave-bar-1 { animation: wave-bar 0.9s ease-in-out infinite; }
+.wave-bar-2 { animation: wave-bar 0.9s ease-in-out infinite 0.15s; }
+.wave-bar-3 { animation: wave-bar 0.9s ease-in-out infinite 0.3s; }
+.wave-bar-4 { animation: wave-bar 0.9s ease-in-out infinite 0.45s; }
