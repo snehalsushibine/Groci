@@ -2,6 +2,8 @@
 
 > Shop smarter. Just speak.
 
+**🚀 Live Demo:** [https://groci-voicecart.netlify.app/](https://groci-voicecart.netlify.app/)
+
 ## Overview
 
 Groci is a multilingual grocery shopping assistant that allows users to speak or type natural-language shopping commands.
